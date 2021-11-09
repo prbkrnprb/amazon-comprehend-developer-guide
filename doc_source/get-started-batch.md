@@ -30,7 +30,7 @@ public class App
         // https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html
         AWSCredentialsProvider awsCreds = DefaultAWSCredentialsProviderChain.getInstance();
  
-        AmazonComprehend comprehendClient =
+        AmazonComprehend client =
             AmazonComprehendClientBuilder.standard()
                                          .withCredentials(awsCreds)
                                          .withRegion("region")
